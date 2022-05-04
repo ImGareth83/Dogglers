@@ -19,6 +19,7 @@ import android.graphics.Bitmap
 import android.graphics.Canvas
 import android.graphics.drawable.BitmapDrawable
 import android.graphics.drawable.Drawable
+import android.util.Log
 import android.view.View
 import android.widget.ImageView
 import androidx.annotation.DrawableRes
@@ -30,12 +31,12 @@ import androidx.test.espresso.ViewAssertion
 import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.matcher.BoundedMatcher
 import androidx.test.espresso.matcher.ViewMatchers
-import androidx.test.espresso.matcher.ViewMatchers.isDisplayed
-import androidx.test.espresso.matcher.ViewMatchers.withText
+import androidx.test.espresso.matcher.ViewMatchers.*
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.example.dogglers.BaseTest.DrawableMatcher.withDrawable
 import com.example.dogglers.data.DataSource
 import org.hamcrest.CoreMatchers
+import org.hamcrest.CoreMatchers.anyOf
 import org.hamcrest.Description
 import org.hamcrest.Matcher
 import java.lang.IllegalStateException
